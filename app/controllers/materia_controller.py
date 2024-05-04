@@ -5,7 +5,7 @@ def create_materia():
     data = request.get_json()
     if 'nombre' not in data:
         return jsonify({'error': 'Falta el nombre de la materia'}), 400
-    alumno_id = data.get('alumno_id')  # Optional
+    alumno_id = data.get('alumno_id')  
     materia = materia_service.add_materia(data['nombre'], alumno_id)
     return jsonify({'id': materia.id, 'nombre': materia.nombre}), 201
 

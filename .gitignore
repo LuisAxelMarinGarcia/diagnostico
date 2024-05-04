@@ -1,19 +1,13 @@
-# Ignorar directorios de entornos virtuales
 venv/
 
-# Ignorar archivos compilados de Python
 __pycache__/
 *.pyc
 
-# Ignorar archivos de configuración sensibles
 .env
 
-# Ignorar archivos de bases de datos locales
 *.db
 
-# Ignorar archivos de log
 *.log
 
-# Ignorar archivos de configuración de IDEs/editores
 .vscode/
 .idea/

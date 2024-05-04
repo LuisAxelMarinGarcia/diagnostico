@@ -5,7 +5,7 @@ def create_alumno():
     data = request.get_json()
     if 'nombre' not in data:
         return jsonify({'error': 'Falta el nombre del alumno'}), 400
-    tutor_id = data.get('tutor_id')  # Optional
+    tutor_id = data.get('tutor_id') 
     alumno = alumno_service.add_alumno(data['nombre'], tutor_id)
     return jsonify({'id': alumno.id, 'nombre': alumno.nombre}), 201
 
